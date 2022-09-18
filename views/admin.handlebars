@@ -1,0 +1,29 @@
+<div class="container">
+    <h1>Poke'mon details</h1>
+    <p>This table conatins a list of all Poke'mon. To add data on a new one, click <a href="./newPokemon">here</a>.</p>
+    
+    {{!TODO Your table here}}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>ID</th>
+                <th>Names</th>
+                <th>Types</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody> 
+                {{!Task 2 Question 4}}
+                {{#each this}}
+                <tr>
+                    <td><img src="/images/pokemon/{{imageUrl}}" width="64"></td>
+                    <td>{{id}}</td>
+                    <td>{{name}}</td>
+                    <td>{{types}}</td>
+                    <td>{{description}}</td>
+                </tr>
+                {{/each}} 
+        </tbody>
+    </table>
+</div>
